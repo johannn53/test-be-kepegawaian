@@ -1,0 +1,494 @@
+{
+	"info": {
+		"_postman_id": "3bab73bb-8ca3-405a-ba13-7c44ac5c07d5",
+		"name": "JASAMARGA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23647117"
+	},
+	"item": [
+		{
+			"name": "GET ALL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET ALL RESPONSE",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/employees",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "498"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1f2-7gg/6zmp1SM24R31le13Xiu2HCw\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jun 2025 19:51:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"data\": [\n        {\n            \"id\": 8,\n            \"nik\": \"11015\",\n            \"name\": \"TEST DOCKER\",\n            \"is_active\": true,\n            \"start_date\": \"2022-06-01T00:00:00.000Z\",\n            \"end_date\": null,\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\"\n        },\n        {\n            \"id\": 2,\n            \"nik\": \"11012\",\n            \"name\": \"Johand\",\n            \"is_active\": true,\n            \"start_date\": \"2025-06-06T00:00:00.000Z\",\n            \"end_date\": null,\n            \"created_by\": \"system\",\n            \"updated_by\": \"system\"\n        },\n        {\n            \"id\": 5,\n            \"nik\": \"11014\",\n            \"name\": \"UPDATED NAME\",\n            \"is_active\": true,\n            \"start_date\": \"2022-06-01T00:00:00.000Z\",\n            \"end_date\": null,\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET REPORT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/employees/report/data",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees",
+						"report",
+						"data"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET REPORT RESPONSE",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/employees/report/data",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employees",
+								"report",
+								"data"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "691"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2b3-6tUtWIqtR5xnvfjMDfcXHxe9rcA\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jun 2025 19:51:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"data\": [\n        {\n            \"employee_id\": 1,\n            \"nik\": \"11013\",\n            \"name\": \"Ari\",\n            \"is_active\": false,\n            \"gender\": \"Laki-Laki\",\n            \"age\": 29,\n            \"school_name\": \"BINUS\",\n            \"level\": \"S1\",\n            \"family\": \"1 Saudara\"\n        },\n        {\n            \"employee_id\": 2,\n            \"nik\": \"11012\",\n            \"name\": \"Johand\",\n            \"is_active\": true,\n            \"gender\": \"Laki-Laki\",\n            \"age\": 35,\n            \"school_name\": \"Universitas Padjadjaran\",\n            \"level\": \"S2\",\n            \"family\": \"\"\n        },\n        {\n            \"employee_id\": 5,\n            \"nik\": \"11014\",\n            \"name\": \"UPDATED NAME\",\n            \"is_active\": true,\n            \"gender\": \"Laki-Laki\",\n            \"age\": 34,\n            \"school_name\": \"Universitas Gadjah Mada\",\n            \"level\": \"S2\",\n            \"family\": \"1 Anak 1 Istri\"\n        },\n        {\n            \"employee_id\": 8,\n            \"nik\": \"11015\",\n            \"name\": \"TEST DOCKER\",\n            \"is_active\": true,\n            \"gender\": \"Laki-Laki\",\n            \"age\": 26,\n            \"school_name\": \"Universitas Gadjah Mada\",\n            \"level\": \"S2\",\n            \"family\": \"2 Anak 1 Istri\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "GET ONE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/employees/5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET ALL Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/employees/5",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employees",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1773"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6ed-EunZOSnJRsY5YyW6oiSTq2NRDiY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jun 2025 03:18:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"data\": {\n        \"id\": 5,\n        \"nik\": \"EMP003\",\n        \"name\": \"UPDATED NAME\",\n        \"is_active\": true,\n        \"start_date\": \"2022-06-01T00:00:00.000Z\",\n        \"end_date\": null,\n        \"created_by\": \"admin\",\n        \"updated_by\": \"admin\",\n        \"createdAt\": \"2025-06-14T02:16:54.444Z\",\n        \"updatedAt\": \"2025-06-14T03:13:27.894Z\",\n        \"profile\": {\n            \"id\": 5,\n            \"employee_id\": 5,\n            \"place_of_birth\": \"Surabaya\",\n            \"date_of_birth\": \"1991-08-12T00:00:00.000Z\",\n            \"gender\": \"Laki-Laki\",\n            \"is_married\": false,\n            \"prof_pict\": \"yusuf.jpg\",\n            \"created_by\": \"admin\",\n            \"updated_by\": \"admin\",\n            \"createdAt\": \"2025-06-14T02:16:54.530Z\",\n            \"updatedAt\": \"2025-06-14T03:13:27.908Z\"\n        },\n        \"families\": [\n            {\n                \"id\": 6,\n                \"employee_id\": 5,\n                \"name\": \"UPDATED FAMILY NAME\",\n                \"identifier\": \"LIN456\",\n                \"job\": \"Ibu Rumah Tangga\",\n                \"place_of_birth\": \"Semarang\",\n                \"date_of_birth\": \"1993-05-17T00:00:00.000Z\",\n                \"religion\": \"Islam\",\n                \"is_life\": true,\n                \"is_divorced\": false,\n                \"relation_status\": \"Istri\",\n                \"created_by\": \"admin\",\n                \"updated_by\": \"admin\",\n                \"createdAt\": \"2025-06-14T03:13:27.912Z\",\n                \"updatedAt\": \"2025-06-14T03:13:27.912Z\"\n            },\n            {\n                \"id\": 7,\n                \"employee_id\": 5,\n                \"name\": \"UPDATED FAMILY NAME 2\",\n                \"identifier\": \"ARF789\",\n                \"job\": \"Pelajar\",\n                \"place_of_birth\": \"Jakarta\",\n                \"date_of_birth\": \"2010-01-12T00:00:00.000Z\",\n                \"religion\": \"Islam\",\n                \"is_life\": true,\n                \"is_divorced\": false,\n                \"relation_status\": \"Anak\",\n                \"created_by\": \"admin\",\n                \"updated_by\": \"admin\",\n                \"createdAt\": \"2025-06-14T03:13:27.912Z\",\n                \"updatedAt\": \"2025-06-14T03:13:27.912Z\"\n            }\n        ],\n        \"educations\": [\n            {\n                \"id\": 9,\n                \"employee_id\": 5,\n                \"name\": \"Institut Teknologi Sepuluh Nopember\",\n                \"level\": \"S1\",\n                \"description\": \"Teknik Informatika\",\n                \"created_by\": \"admin\",\n                \"updated_by\": \"admin\",\n                \"createdAt\": \"2025-06-14T03:13:27.923Z\",\n                \"updatedAt\": \"2025-06-14T03:13:27.923Z\"\n            },\n            {\n                \"id\": 10,\n                \"employee_id\": 5,\n                \"name\": \"Universitas Gadjah Mada\",\n                \"level\": \"S2\",\n                \"description\": \"Ilmu Komputer\",\n                \"created_by\": \"admin\",\n                \"updated_by\": \"admin\",\n                \"createdAt\": \"2025-06-14T03:13:27.923Z\",\n                \"updatedAt\": \"2025-06-14T03:13:27.923Z\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "CREATE ONE",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"employee\": {\n    \"nik\": \"EMP003\",\n    \"name\": \"TEST DOCKER\",\n    \"is_active\": true,\n    \"start_date\": \"2022-06-01\",\n    \"end_date\": null,\n    \"created_by\": \"admin\",\n    \"updated_by\": \"admin\"\n  },\n  \"profile\": {\n    \"place_of_birth\": \"Surabaya\",\n    \"date_of_birth\": \"1999-09-29\",\n    \"gender\": \"Laki-Laki\",\n    \"is_married\": false,\n    \"prof_pict\": \"employee.jpg\",\n    \"created_by\": \"admin\",\n    \"updated_by\": \"admin\"\n  },\n  \"families\": [\n    {\n      \"name\": \"DOCKER WIFE\",\n      \"identifier\": \"Docker456\",\n      \"job\": \"Ibu Rumah Tangga\",\n      \"place_of_birth\": \"Semarang\",\n      \"date_of_birth\": \"1993-05-17\",\n      \"religion\": \"Islam\",\n      \"is_life\": true,\n      \"is_divorced\": false,\n      \"relation_status\": \"Istri\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    },\n    {\n      \"name\": \"DOCKER kid 2\",\n      \"identifier\": \"Kid123\",\n      \"job\": \"-\",\n      \"place_of_birth\": \"Semarang\",\n      \"date_of_birth\": \"2023-05-17\",\n      \"religion\": \"Islam\",\n      \"is_life\": true,\n      \"is_divorced\": false,\n      \"relation_status\": \"Anak\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    },\n    {\n      \"name\": \"DOCKER kid\",\n      \"identifier\": \"Kid456\",\n      \"job\": \"-\",\n      \"place_of_birth\": \"Semarang\",\n      \"date_of_birth\": \"2020-05-17\",\n      \"religion\": \"Islam\",\n      \"is_life\": true,\n      \"is_divorced\": false,\n      \"relation_status\": \"Anak\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    }\n  ],\n  \"educations\": [\n    {\n      \"name\": \"Institut Teknologi Sepuluh Nopember\",\n      \"level\": \"S1\",\n      \"description\": \"Teknik Informatika\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    },\n    {\n      \"name\": \"Universitas Gadjah Mada\",\n      \"level\": \"S2\",\n      \"description\": \"Ilmu Komputer\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    }\n  ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/employees",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "CREATE ONE RESPONSE",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"employee\": {\n    \"nik\": \"11015\",\n    \"name\": \"TEST DOCKER\",\n    \"is_active\": true,\n    \"start_date\": \"2022-06-01\",\n    \"end_date\": null,\n    \"created_by\": \"admin\",\n    \"updated_by\": \"admin\"\n  },\n  \"profile\": {\n    \"place_of_birth\": \"Surabaya\",\n    \"date_of_birth\": \"1999-09-29\",\n    \"gender\": \"Laki-Laki\",\n    \"is_married\": false,\n    \"prof_pict\": \"employee.jpg\",\n    \"created_by\": \"admin\",\n    \"updated_by\": \"admin\"\n  },\n  \"families\": [\n    {\n      \"name\": \"DOCKER WIFE\",\n      \"identifier\": \"Docker456\",\n      \"job\": \"Ibu Rumah Tangga\",\n      \"place_of_birth\": \"Semarang\",\n      \"date_of_birth\": \"1993-05-17\",\n      \"religion\": \"Islam\",\n      \"is_life\": true,\n      \"is_divorced\": false,\n      \"relation_status\": \"Istri\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    },\n    {\n      \"name\": \"DOCKER kid 2\",\n      \"identifier\": \"Kid123\",\n      \"job\": \"-\",\n      \"place_of_birth\": \"Semarang\",\n      \"date_of_birth\": \"2023-05-17\",\n      \"religion\": \"Islam\",\n      \"is_life\": true,\n      \"is_divorced\": false,\n      \"relation_status\": \"Anak\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    },\n    {\n      \"name\": \"DOCKER kid\",\n      \"identifier\": \"Kid456\",\n      \"job\": \"-\",\n      \"place_of_birth\": \"Semarang\",\n      \"date_of_birth\": \"2020-05-17\",\n      \"religion\": \"Islam\",\n      \"is_life\": true,\n      \"is_divorced\": false,\n      \"relation_status\": \"Anak\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    }\n  ],\n  \"educations\": [\n    {\n      \"name\": \"Institut Teknologi Sepuluh Nopember\",\n      \"level\": \"S1\",\n      \"description\": \"Teknik Informatika\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    },\n    {\n      \"name\": \"Universitas Gadjah Mada\",\n      \"level\": \"S2\",\n      \"description\": \"Ilmu Komputer\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    }\n  ]\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/employees",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employees"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"38-Uw29nNBZO93FUFHFiZOXEIPLol0\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jun 2025 19:46:37 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Employee created successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "EDIT ONE",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"employee\": {\n    \"nik\": \"EMP003\",\n    \"name\": \"UPDATED NAME\",\n    \"is_active\": true,\n    \"start_date\": \"2022-06-01\",\n    \"end_date\": null,\n    \"created_by\": \"admin\",\n    \"updated_by\": \"admin\"\n  },\n  \"profile\": {\n    \"place_of_birth\": \"Surabaya\",\n    \"date_of_birth\": \"1991-08-12\",\n    \"gender\": \"Laki-Laki\",\n    \"is_married\": false,\n    \"prof_pict\": \"yusuf.jpg\",\n    \"created_by\": \"admin\",\n    \"updated_by\": \"admin\"\n  },\n  \"families\": [\n    {\n      \"name\": \"UPDATED FAMILY NAME\",\n      \"identifier\": \"LIN456\",\n      \"job\": \"Ibu Rumah Tangga\",\n      \"place_of_birth\": \"Semarang\",\n      \"date_of_birth\": \"1993-05-17\",\n      \"religion\": \"Islam\",\n      \"is_life\": true,\n      \"is_divorced\": false,\n      \"relation_status\": \"Istri\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    },\n    {\n      \"name\": \"UPDATED FAMILY NAME 2\",\n      \"identifier\": \"ARF789\",\n      \"job\": \"Pelajar\",\n      \"place_of_birth\": \"Jakarta\",\n      \"date_of_birth\": \"2010-01-12\",\n      \"religion\": \"Islam\",\n      \"is_life\": true,\n      \"is_divorced\": false,\n      \"relation_status\": \"Anak\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    }\n  ],\n  \"educations\": [\n    {\n      \"name\": \"Institut Teknologi Sepuluh Nopember\",\n      \"level\": \"S1\",\n      \"description\": \"Teknik Informatika\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    },\n    {\n      \"name\": \"Universitas Gadjah Mada\",\n      \"level\": \"S2\",\n      \"description\": \"Ilmu Komputer\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/employees/5",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "EDIT ONE RESPONSE",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"employee\": {\n    \"nik\": \"11015\",\n    \"name\": \"UPDATED NAME\",\n    \"is_active\": true,\n    \"start_date\": \"2022-06-01\",\n    \"end_date\": null,\n    \"created_by\": \"admin\",\n    \"updated_by\": \"admin\"\n  },\n  \"profile\": {\n    \"place_of_birth\": \"Surabaya\",\n    \"date_of_birth\": \"1991-08-12\",\n    \"gender\": \"Laki-Laki\",\n    \"is_married\": false,\n    \"prof_pict\": \"yusuf.jpg\",\n    \"created_by\": \"admin\",\n    \"updated_by\": \"admin\"\n  },\n  \"families\": [\n    {\n      \"name\": \"UPDATED FAMILY NAME\",\n      \"identifier\": \"LIN456\",\n      \"job\": \"Ibu Rumah Tangga\",\n      \"place_of_birth\": \"Semarang\",\n      \"date_of_birth\": \"1993-05-17\",\n      \"religion\": \"Islam\",\n      \"is_life\": true,\n      \"is_divorced\": false,\n      \"relation_status\": \"Istri\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    },\n    {\n      \"name\": \"UPDATED FAMILY NAME 2\",\n      \"identifier\": \"ARF789\",\n      \"job\": \"Pelajar\",\n      \"place_of_birth\": \"Jakarta\",\n      \"date_of_birth\": \"2010-01-12\",\n      \"religion\": \"Islam\",\n      \"is_life\": true,\n      \"is_divorced\": false,\n      \"relation_status\": \"Anak\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    }\n  ],\n  \"educations\": [\n    {\n      \"name\": \"Institut Teknologi Sepuluh Nopember\",\n      \"level\": \"S1\",\n      \"description\": \"Teknik Informatika\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    },\n    {\n      \"name\": \"Universitas Gadjah Mada\",\n      \"level\": \"S2\",\n      \"description\": \"Ilmu Komputer\",\n      \"created_by\": \"admin\",\n      \"updated_by\": \"admin\"\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/employees/5",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employees",
+								"5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "56"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"38-QIZtpc8domFRkY3o0YwHkt8t0OI\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 15 Jun 2025 19:54:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": 200,\n    \"message\": \"Employee updated successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "DELETE ONE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/employees/4",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"employees",
+						"4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "DELETE RESPONSE",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/employees/4",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"employees",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "43"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2b-i4qa4hauo85pXTwHLLOsg1OOhio\""
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 13 Jun 2025 16:08:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Employee deleted successfully\"\n}"
+				}
+			]
+		}
+	]
+}
